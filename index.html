@@ -3,82 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Research Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        section {
-            padding: 20px;
-            margin: 20px;
-            background-color: #fff;
-            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-        .profile-image {
-            display: block;
-            margin: 0 auto;
-            width: 200px;
-            border-radius: 50%;
-            margin-bottom: 20px;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-    </style>
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
 
     <header>
-        <h1>My Research Page</h1>
+        <div class="container">
+            <h1>Your Name</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section>
-        <img src="your_headshot.jpg" alt="Your Headshot" class="profile-image">
-        <h2>About Me</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum justo eu ipsum euismod, vel consequat tellus malesuada. Nulla facilisi.</p>
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Your introduction goes here...</p>
+        </div>
     </section>
 
-    <section>
-        <h2>Research Article Poster Presentations</h2>
-        <ul>
-            <li>Title of Research Article 1</li>
-            <li>Title of Research Article 2</li>
-            <li>Title of Research Article 3</li>
-            <!-- Add more items as needed -->
-        </ul>
+    <section id="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <!-- Your portfolio items go here -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Your contact information goes here...</p>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 My Research Page</p>
+        <div class="container">
+            <p>&copy; 2024 Your Portfolio</p>
+        </div>
     </footer>
+
+</body>
+</html>
+
 
 </body>
 </html>
