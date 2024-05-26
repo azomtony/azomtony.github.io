@@ -48,9 +48,20 @@ orcid_username: 0009-0007-6276-9930
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  I am Golam Azom, a dedicated computational chemist currently pursuing a PhD in Chemistry with a minor in Computer Science at Louisiana State University. My research is mainly focused on developing neural network based force-field for Graphene-Oxide liquid interface to enhance study at these complex interfces.
+  I am Golam Azom, a dedicated computational chemist currently pursuing a PhD in Chemistry with a minor in Computer Science at Louisiana State University. My research is mainly focused on developing neural network based force-field for Graphene-Oxide liquid interface to enhance study at these complex interfces. I am also working on separation of organic contaminants and radionucleotide from water using molecular dynamics. Some notable skillset that I have obtained throughout my research career: 
 
-  I am most skilled in: <mark>AWS</mark> and <mark>Eating Pizza</mark>
+  - Molecular Dynamics (MD)
+  - Density Functional Theory (DFT)
+  - Ab-initio Molecular Dynamics (AIMD)
+  - **DNNF** (Deep Neural Network Forcefield) for GO-liquid interface
+  - Enhanced Sampling and free energy calculation
+  - Solid-liuid Interfaces
+  - Reactivity at interfaces
+  - Constant potential simulation
+  - Spectroscopies (vSFG)
+  - Code development (Analysis using python)
+  - Machine Learning (CNN, LSTM, Transformer)
+  - Data Science
 
 content:
   - title: Projects # Title for the section
