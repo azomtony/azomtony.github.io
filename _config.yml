@@ -80,9 +80,43 @@ content:
           Supervisor: Pr. Revati Kumar
 
           - Development of Deep Neural Network Force-field (DNNF) for aqueous graphene oxide interface  
-          - Study of graphene oxide methanol interface to understand structure and reactivity at interface
-          - Study of organic pollutants adsorption at graphene oxide water 
+          - Study of graphene oxide methanol interface to understand structure and reactivity at the interface
+          - Study of organic pollutants adsorption at graphene oxide water interface
           - Study of radionucleotide separation from water using conductive graphene
+          - Use of many-body simulations to accurately model the water graphene system to resolve spectroscopic anomalies between experiment and simulations
+          - Developing many-body PES for methanol using MB-fit
+
+  - title: Scientific Production
+    layout: list
+    content:
+      - layout: top-middle
+        sub_title: Publications
+        description: |
+
+          _________________
+
+          P1. **Azom, G.**; Milet, A.; David, R.\*; Kumar, R.\* From Graphene Oxide to Graphene: Changes in Interfacial Water Structure and Reactivity. In preparation.
+          # P2. **Azom, G.**
+
+
+      - layout: top-middle
+        sub_title: Oral Communications
+        description: |
+
+          _________________
+
+          # T1.	“Streamlining the training and the chemical space exploration of neural network potential based force-fields” at: ACS National Meeting “Many Flavors of Chemistry”, New Orleans, US, March 17-21st, 2024
+
+
+
+      - layout: top-middle
+        sub_title: Poster Communications
+        description: |
+
+          _________________
+
+          # Po1. “Role of environment in the abiotic peptide bond formation” at 17th Rencontres de Chimistes Théoriciens Francophones, Bordeaux, FR, June/July 27-1st, 2022
+
 
 
   # - title: Education # Title for the section
