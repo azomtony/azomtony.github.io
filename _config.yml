@@ -89,7 +89,7 @@ content:
   - title: Scientific Production
     layout: list
     content:
-      - layout: top-middle
+      - layout: list
         sub_title: Publications
         description: |
 
