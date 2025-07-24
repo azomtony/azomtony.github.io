@@ -14,6 +14,12 @@ website: azomtony.github.io
 # Dark Mode (true/false/never)
 darkmode: false
 
+# Navigation links
+navigation:
+  - title: About
+    url: /
+  - title: Research
+    url: /research/
 # Social links
 #twitter_username: facespics
 github_username:  azomtony
@@ -104,51 +110,6 @@ content:
           P4. Olubowale, O.; Biswas, S.; **Azom, G.**; Prather, B.; Owoso, S.; Rinee, K.; Marroquin, K.; Gates, K.; Chambers, M.; Xu, A.; Garno, J.\* “May the Force Be with You!” Force–Volume Mapping with Atomic Force Microscopy. ACS Omega 2021, 6, 40, 25860–25875. [https://doi.org/10.1021/acsomega.1c03829](https://doi.org/10.1021/acsomega.1c03829). Contributed equally.
 
 
-      # - layout: top-middle
-      #   sub_title: Oral Communications
-      #   description: |
-
-      #     _________________
-
-      #      T1.	“Streamlining the training and the chemical space exploration of neural network potential based force-fields” at: ACS National Meeting “Many Flavors of Chemistry”, New Orleans, US, March 17-21st, 2024
-
-
-
-      # - layout: top-middle
-      #   sub_title: Poster Communications
-      #   description: |
-
-      #     _________________
-
-      #     # Po1. “Role of environment in the abiotic peptide bond formation” at 17th Rencontres de Chimistes Théoriciens Francophones, Bordeaux, FR, June/July 27-1st, 2022
-
-
-
-  # - title: Education # Title for the section
-  #   layout: list # Type of content section (list/text)
-  #   content:
-  #     - layout: left
-  #       title: Harvard University
-  #       caption: 2010 - 2013
-  #       sub_title: BSc Computer Science
-  #       quote: >
-  #         Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
-  #       description: | # this will include new lines to allow paragraphs
-  #         During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
-
-  #         I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
-
-  # - title: A Little More About Me
-  #   layout: text
-  #   content: | # this will include new lines to allow paragraphs
-  #     Alongside my interests in networks and software engineering some of my other interests and hobbies are:
-  #     - Rock climbing
-  #     - Gaming
-  #     - Knitting
-  #     - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
-
-  #     Look at this cool image  
-  #     ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
 
 # Footer
 footer_show_references: true
