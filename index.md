@@ -6,13 +6,3 @@
 #
 layout: default
 ---
-<!-- Manual Navigation Bar -->
-<div style="text-align:center; margin-bottom: 1.5em; font-size: 1.1em;">
-  <a href="/" style="margin: 0 20px;">About</a>
-  <a href="/research/" style="margin: 0 20px;">Research</a>
-  <a href="/publications/" style="margin: 0 20px;">Publications</a>
-  <a href="/talks/" style="margin: 0 20px;">Talks</a>
-  <a href="/posters/" style="margin: 0 20px;">Posters</a>
-</div>
-
-{{ content }}

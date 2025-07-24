@@ -13,13 +13,6 @@ website: azomtony.github.io
 
 # Dark Mode (true/false/never)
 darkmode: false
-show_navigation: true
-# Navigation links
-navigation:
-  - title: About
-    url: /
-  - title: Research
-    url: /research/
 # Social links
 #twitter_username: facespics
 github_username:  azomtony
