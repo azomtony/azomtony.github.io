@@ -1,23 +1,34 @@
 ---
-layout: page
-title: Research Projects
+title: "Research Projects"
 permalink: /research/
+layout: single
+author_profile: true
 ---
-
-## Current Research Projects
 
 ### 🧠 Deep Neural Network Force Field for GO–Water Interface
-Developed a neural network-based potential trained on high-level quantum data to capture interfacial behavior between water and graphene oxide.
 
-### 🧪 Methanol–Graphene Oxide Interface
-Studying structure and reactivity of methanol near GO surfaces using ab initio MD and classical simulations.
-
-### 🌊 Contaminant and Radionuclide Separation
-Investigating the adsorption and transport of organic pollutants and radionuclides at GO and functionalized graphene surfaces.
-
-### 📈 Enhanced Sampling Techniques
-Utilizing metadynamics and umbrella sampling for computing free energy landscapes of interfacial phenomena.
+Developed a high-accuracy many-body neural network potential for modeling interfacial properties of graphene oxide in water, trained on quantum reference data.
 
 ---
 
-You can also add figures and plots if needed.
+### 🍸 Methanol–Graphene Oxide Interface
+
+Used AIMD and DFT to explore structure and proton-coupled dynamics of methanol near GO surfaces. Analysis of hydrogen bonding, adsorption, and reactivity.
+
+---
+
+### 💧 Pollutant and Radionuclide Removal
+
+Simulated interaction of PFOA, PFOS, and radionuclides (e.g., UO₂²⁺) with GO to evaluate adsorption mechanisms and selectivity in water remediation.
+
+---
+
+### ⚡ Constant Potential Simulations
+
+Implemented `conp` and `ewald/electrode` methods in MD to simulate electrochemical bias and interfacial charge effects at GO–liquid boundaries.
+
+---
+
+### 📈 Spectroscopic Comparisons
+
+Generated vibrational SFG spectra from MD simulations to directly compare structural motifs with experimental observations.

@@ -1,119 +1,61 @@
-# Site
-repository: sproogen/resume-theme
-favicon: images/favicon.ico
-
-# Content configuration version
-version: 2
-
-# Personal info
-name: Golam Azom
-title: Computational Chemist
+title: ""
 email: azom.chem.lsu@gmail.com
-website: azomtony.github.io
+description: >-
+  Computational Chemist | Graphene Oxide Interfaces | Machine Learning Potentials
+url: "https://azomtony.github.io"
+baseurl: "" # leave empty for user.github.io root
 
-# Dark Mode (true/false/never)
-darkmode: false
+
+custom_css: "/assets/css/custom.css"  
 # Social links
-#twitter_username: facespics
-github_username:  azomtony
-# stackoverflow_username: "00000001"
-# dribbble_username: jekyll
-# facebook_username: jekyll
-# flickr_username: jekyll
-#instagram_username: jameswgrant
+github_username: azomtony
 linkedin_username: golam-azom-0723b3196
-# xing_username: jekyll
-# pinterest_username: jekyll
-#youtube_username: globalmtb
-# googleplus_username: +jekyll
 orcid_username: 0009-0007-6276-9930
 
-# Additional icon links
-# additional_links:
-# - title: itsgoingto.be
-#   icon: fas fa-globe
-#   url: https://www.itsgoingto.be
-# - title: another link
-#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
-#   url: Link url (eg. https://google.com)
-
-# Google Analytics and Tag Manager
-# Using more than one of these may cause issues with reporting
-# gtm: "GTM-0000000"
-# gtag: "UA-00000000-0"
-# google_analytics: "UA-00000000-0"
-
-# About Section
-# about_title: About Me
-about_profile_image: images/profile.jpg
-about_content: | # this will include new lines to allow paragraphs
-  I am Golam Azom, a dedicated computational chemist currently pursuing a PhD in Chemistry with a minor in Computer Science at Louisiana State University. My research is mainly focused on developing neural network based force-field for Graphene-Oxide liquid interface to enhance study at these complex interfces. I am also working on separation of organic contaminants and radionucleotide from water using molecular dynamics. Some notable skillset that I have obtained throughout my research career: 
-
-  - Molecular Dynamics (MD)
-  - Density Functional Theory (DFT)
-  - Ab-initio Molecular Dynamics (AIMD)
-  - **DNNF** (Deep Neural Network Forcefield) for GO-liquid interface
-  - Enhanced Sampling and free energy calculation
-  - Solid-liuid Interfaces
-  - Reactivity at interfaces
-  - Constant potential simulation
-  - Spectroscopies (vSFG)
-  - Code development (Analysis using python)
-  - Machine Learning (CNN, LSTM, Transformer)
-  - Data Science
-
-content:
-  - title: Research Experiences
-    layout: list
-    content:
-      - layout: left
-        border: weak
-        title: PhD Student
-        sub_title: Louisiana State University (Baton-Rouge, USA)
-        caption: 2021-present
-        link: https://faculty.lsu.edu/revatik/index.php
-        link_text: Departement of Chemistry - Kumar's Group
-        description: |
-          Graphene oxide - liquid interfaces: interfacial properties to application 
-
-          Supervisor: Pr. Revati Kumar
-
-          - Development of Deep Neural Network Force-field (DNNF) for aqueous graphene oxide interface  
-          - Study of graphene oxide methanol interface to understand structure and reactivity at the interface
-          - Study of organic pollutants adsorption at graphene oxide water interface
-          - Study of radionucleotide separation from water using conductive graphene
-          - Use of many-body simulations to accurately model the water graphene system to resolve spectroscopic anomalies between experiment and simulations
-          - Developing many-body PES for methanol using MB-fit
-
-  - title: Scientific Production
-    layout: list
-    content:
-      - layout: top-middle
-        sub_title: Publications
-        description: |
-
-          _________________
-
-          P1. **Azom, G.**; Milet, A.; David, R.\*; Kumar, R.\* From Graphene Oxide to Graphene: Changes in Interfacial Water Structure and Reactivity Using Deep Neural Network Force Fields. Journal of Physical Chemistry C, 2024. [https://doi.org/10.1021/acs.jpcc.4c03444](https://doi.org/10.1021/acs.jpcc.4c03444).
-          
-          P2. **Azom, G.**; R.\*; Kumar, R.\* Graphene oxide–methanol interfaces: reactivity and structures. In preparation.
-          
-          P3. Balogun, T.; Rashmi, R.; **Azom, G.**, Agnew, H.; Paesani, F.\*; Kumar, R.\* Interfacial water structure at the charged graphene/water interface using vibrational sum-frequency generation spectroscopy. In preparation.
-          
-          P4. Olubowale, O.; Biswas, S.; **Azom, G.**; Prather, B.; Owoso, S.; Rinee, K.; Marroquin, K.; Gates, K.; Chambers, M.; Xu, A.; Garno, J.\* “May the Force Be with You!” Force–Volume Mapping with Atomic Force Microscopy. ACS Omega 2021, 6, 40, 25860–25875. [https://doi.org/10.1021/acsomega.1c03829](https://doi.org/10.1021/acsomega.1c03829). Contributed equally.
-
-
-
-# Footer
-footer_show_references: true
-# references_title: References on request (Override references text)
-
-# Build settings
-remote_theme: sproogen/resume-theme
-
-sass:
-  sass_dir: _sass
-  style: compressed
+theme: minimal-mistakes-jekyll
 
 plugins:
- - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-include-cache
+
+# Theme settings
+minimal_mistakes_skin: "default"
+markdown: kramdown
+highlighter: rouge
+
+# Output pages from _pages/
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+# Default layout and profile for all pages
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: single
+      author_profile: true
+      custom_css: "/assets/css/custom.css"
+
+author:
+  name: "Golam Azom"
+  avatar: "/images/profile.jpg"  # Put your image in /images
+  bio: |
+    CCMS Intern at LLNL  
+    Ph.D. Candidate in Chemistry at LSU
+    Computational Chemist
+  location: "Louisiana, USA"
+  email: azom.chem.lsu@gmail.com
+  github: azomtony
+  linkedin: golam-azom-0723b3196
+  links:
+    - label: "Google Scholar"
+      icon: "fas fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=rLltVjIAAAAJ&hl=en"
+
+# Navigation links (pulled from _data/navigation.yml)
+# These will appear in the top navbar
+# You don't need `header_pages:` when using this system
