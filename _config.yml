@@ -1,61 +1,15 @@
-title: ""
-email: azom.chem.lsu@gmail.com
-description: >-
-  Computational Chemist | Graphene Oxide Interfaces | Machine Learning Potentials
-url: "https://azomtony.github.io"
-baseurl: "" # leave empty for user.github.io root
-
-
-custom_css: "/assets/css/custom.css"  
-# Social links
-github_username: azomtony
-linkedin_username: golam-azom-0723b3196
-orcid_username: 0009-0007-6276-9930
-
-theme: minimal-mistakes-jekyll
-
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-include-cache
-
-# Theme settings
-minimal_mistakes_skin: "default"
+title: Golam Azom
+description: Computational Chemistry • ML Force Fields • Interfaces
+url: ""        # set to https://azomtony.github.io after deploy
+baseurl: ""    # keep empty for user/organization pages
+permalink: pretty
 markdown: kramdown
-highlighter: rouge
-
-# Output pages from _pages/
-collections:
-  pages:
-    output: true
-    permalink: /:path/
-
-# Default layout and profile for all pages
+plugins: [jekyll-feed, jekyll-seo-tag, jekyll-sitemap]
 defaults:
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: single
-      author_profile: true
-      custom_css: "/assets/css/custom.css"
-
-author:
-  name: "Golam Azom"
-  avatar: "/images/profile.jpg"  # Put your image in /images
-  bio: |
-    CCMS Intern at LLNL  
-    Ph.D. Candidate in Chemistry at LSU
-    Computational Chemist
-  location: "Louisiana, USA"
-  email: azom.chem.lsu@gmail.com
-  github: azomtony
-  linkedin: golam-azom-0723b3196
-  links:
-    - label: "Google Scholar"
-      icon: "fas fa-graduation-cap"
-      url: "https://scholar.google.com/citations?user=rLltVjIAAAAJ&hl=en"
-
-# Navigation links (pulled from _data/navigation.yml)
-# These will appear in the top navbar
-# You don't need `header_pages:` when using this system
+  - scope: {path: ""}
+    values: {layout: default}
+nav:
+  - {title: "Home",          url: "/"}
+  - {title: "Research",      url: "/research/"}
+  - {title: "Publications",  url: "/publications/"}
+  - {title: "About",         url: "/about/"}

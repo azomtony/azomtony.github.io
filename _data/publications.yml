@@ -1,0 +1,52 @@
+- year: 2025
+  title: "Ion and Proton Transport in Carbon Nanotube Porins with a pH-Switchable Entrance Gate"
+  authors: "J. Abdullah; M. F. C. Andrade; Z. Zhulficar; M. Berrens; Z. Li; **Golam Azom**; Y. Yao; Z. Rizer; Y. Li; S. Zhao; T. A. Pham; Y. Wang; A. Noy"
+  venue: "Nano Letters"
+  type: "Article"
+  status: "Submitted"
+
+- year: 2025
+  title: "Interface-Driven Enhancement of Nafion Thin-Film Conductivity via Controlled Aminothiol Modification"
+  authors: "Karen Acurio-Cerda; Oghenetega Allen Obewhere; **Golam Azom**; Revati Kumar; Shudipto Konika Dishari"
+  venue: "RSC Applied Polymers"
+  type: "Article"
+  doi: "10.1039/D5LP00245A"
+  link: "https://pubs.rsc.org/en/content/articlehtml/2025/lp/d5lp00245a"
+  toc: "/assets/images/app_poly.jpeg"
+
+- year: 2025
+  title: "Probing Oxidation-Controlled Proton Transfer at the Graphene Oxide–Water Interface with Deep Neural Network Force Fields"
+  authors: "**Golam Azom**; Toheeb O. Balogun; Anne Milet; Rolf David; Revati Kumar"
+  venue: "Chemical Communications"
+  type: "Article"
+  doi: "10.1039/d5cc03431k"
+  link: "https://pubs.rsc.org/en/content/articlelanding/2025/cc/d5cc03431k"
+  toc: "/assets/images/chemcomm_toc.png"
+
+- year: 2025
+  title: "Revealing the Water Structure at Neutral and Charged Graphene/Water Interfaces through Quantum Simulations of Sum Frequency Generation Spectra"
+  authors: "Richa Rashmi; Toheeb O. Balogun; **Golam Azom**; Henry Agnew; Revati Kumar; Francesco Paesani"
+  venue: "ACS Nano"
+  type: "Article"
+  doi: "10.1021/acsnano.4c16486"
+  link: "https://pubs.acs.org/doi/10.1021/acsnano.4c16486"
+  toc: "/assets/images/acs_nano.jpeg"
+
+
+- year: 2024
+  title: "From Graphene Oxide to Graphene: Changes in Interfacial Water Structure and Reactivity Using Deep Neural Network Force Fields"
+  authors: "**Golam Azom**; Anne Milet; Rolf David; Revati Kumar"
+  venue: "The Journal of Physical Chemistry C"
+  type: "Article"
+  doi: "10.1021/acs.jpcc.4c03444"
+  link: "https://pubs.acs.org/doi/10.1021/acs.jpcc.4c03444"
+  toc: "/assets/images/jpc_c_toc.jpeg"
+
+- year: 2021
+  title: "May the Force Be with You! Force–Volume Mapping with Atomic Force Microscopy"
+  authors: "Olajumoke H. Olubowale; Shanta Biswas; **Golam Azom**; Benjamin L. Prather; Samuel D. Owoso; Khaleda C. Rinee; Karen Marroquin; Kaelin A. Gates; Matthew B. Chambers; Amy Xu; Jayne C. Garno"
+  venue: "ACS Omega"
+  type: "Mini-Review"
+  doi: "10.1021/acsomega.1c03829"
+  link: "https://pubs.acs.org/doi/full/10.1021/acsomega.1c03829"
+  toc: "/assets/images/afm_toc.jpg"

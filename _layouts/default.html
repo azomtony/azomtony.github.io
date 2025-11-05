@@ -1,36 +1,21 @@
----
----
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+<link rel="stylesheet" href="https://unpkg.com/@picocss/pico@2.0.6/css/pico.min.css">
+<link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+{% seo %}
+<!--/head><body>
+<header class="container">{% include nav.html %}</header>-->
+<body>
+  <!-- Global page buttons -->
+  <section class="top-cta">
+    {% assign here = page.url %}
+    <a href="/" class="chip{% if here == '/' %} active{% endif %}">Home</a>
+    <a href="/research/" class="chip{% if here contains '/research/' %} active{% endif %}">Research</a>
+    <a href="/publications/" class="chip{% if here contains '/publications/' %} active{% endif %}">Publications</a>
+    <a href="/about/" class="chip{% if here contains '/about/' %} active{% endif %}">About</a>
+  </section>
 
-<!doctype html>
-{% include copyright.html %}
-<html lang="{{ site.locale | replace: "_", "-" | default: "en" }}" class="no-js">
-  <head>
-    {% include head.html %}
-    {% include head/custom.html %}
-  </head>
-
-  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}" dir="{% if site.rtl %}rtl{% else %}ltr{% endif %}">
-    {% include_cached skip-links.html %}
-    {% include_cached masthead.html %}
-
-    <div class="initial-content">
-      {{ content }}
-      {% include after-content.html %}
-    </div>
-
-    {% if site.search == true %}
-      <div class="search-content">
-        {% include_cached search/search_form.html %}
-      </div>
-    {% endif %}
-
-    <div id="footer" class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include_cached footer.html %}
-      </footer>
-    </div>
-
-    {% include scripts.html %}
-  </body>
-</html>
+<main class="container">{{ content }}</main>
+<footer class="container"><hr><small>© {{ site.time | date: "%Y" }} {{ site.title }}</small></footer>
+</body></html>

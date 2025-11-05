@@ -1,0 +1,8 @@
+<nav>
+  <ul><li><strong><a href="{{ '/' | relative_url }}">{{ site.title }}</a></strong></li></ul>
+  <ul>
+    {% for item in site.nav %}
+      <li><a href="{{ item.url | relative_url }}" {% if page.url == item.url %}aria-current="page"{% endif %}>{{ item.title }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>
