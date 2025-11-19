@@ -1,0 +1,34 @@
+hero:
+  title: "Skills & Expertise"
+
+cloud_sections:
+  - title: "Computational Methods"
+    tags:
+      - {label: "Classical MD", weight: 4}
+      - {label: "Ab Initio MD", weight: 4}
+      - {label: "Umbrella Sampling", weight: 3}
+      - {label: "Force-Field Development", weight: 5}
+      - {label: "Metadynamics", weight: 3}
+      - {label: "DFT", weight: 2}
+      - {label: "CCSD(T)", weight: 2}
+      - {label: "Constant Potential Simulation", weight: 2}
+      - {label: "Many-body Potential", weight: 3}
+
+  - title: "Machine Learning"
+    tags:
+      - {label: "Machine Learned Force Fields", weight: 5}
+      - {label: "MACE", weight: 5}
+      - {label: "DeePMD", weight: 5}
+      - {label: "Allegro", weight: 3}
+      - {label: "Active Learning", weight: 3}
+      - {label: "Workflow Automation", weight: 3}
+      - {label: "Convolutional Neural Networks", weight: 2}
+      - {label: "Recurrent Neural Networks", weight: 3}
+      - {label: "Reinforcement Learning", weight: 2}
+
+  - title: "Programming Languages"
+    tags:
+      - {label: "Python", weight: 5}
+      - {label: "C", weight: 2}
+      - {label: "Shell Scripting", weight: 2}
+

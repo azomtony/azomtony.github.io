@@ -1,0 +1,39 @@
+hero:
+  title: "About"
+
+experience:
+  - title: "Graduate Research Assistant"
+    organization: "Department of Chemistry, Louisiana State University"
+    dates: "2021 — 2025"
+    description: >
+      Lead computational studies of solid–liquid interfaces using classical and
+      *ab initio* molecular dynamics, enhanced sampling, and machine-learning potentials.
+    highlights:
+      - "Developed ML potentials for GO–Water, GO-Methanol, Glyme-Graphene, Ion Exchange Membranes."
+      - "Automated workflows for data generation, model training, and validation using active learning."
+      - "Mentored undergraduate researchers on simulation project."
+
+education:
+  - degree: "Ph.D. in Chemistry"
+    institution: "Louisiana State University"
+    location: "Baton Rouge, Louisiana"
+    summary: "Dissertation focused on molecular modeling of confined electrolytes and nanofluidic channels."
+  - degree: "B.Sc. in Applied Chemistry & Chemical Engineering"
+    institution: "University of Dhaka"
+    location: "Dhaka, Bangladesh"
+    summary: "Emphasis on physical chemistry, thermodynamics, and materials engineering."
+
+affiliation:
+  title: "Computational Molecular Science Group"
+  description: >
+    Working alongside experimental electrochemists and ML practitioners to co-design workflows
+    for solid–liquid interfaces.
+  meta: "Department of Chemistry, Louisiana State University"
+
+volunteer:
+  - title: "Graduate peer mentor"
+    summary: "Support onboarding students with code reviews, simulation clinics, and reproducibility checklists."
+  - title: "STEM outreach & demo lead"
+    summary: "Share nanoscience demonstrations at campus open houses and regional science events."
+  - title: "Open-source contributor"
+    summary: "Package reusable analysis notebooks and documentation so collaborators can extend my workflows."

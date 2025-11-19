@@ -12,6 +12,7 @@
     {% assign here = page.url %}
     <a href="/" class="chip{% if here == '/' %} active{% endif %}">Home</a>
     <a href="/research/" class="chip{% if here contains '/research/' %} active{% endif %}">Research</a>
+    <a href="/skills/" class="chip{% if here contains '/skills/' %} active{% endif %}">Skills</a>
     <a href="/publications/" class="chip{% if here contains '/publications/' %} active{% endif %}">Publications</a>
     <a href="/about/" class="chip{% if here contains '/about/' %} active{% endif %}">About</a>
   </section>
