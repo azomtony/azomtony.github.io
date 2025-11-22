@@ -1,6 +1,11 @@
 hero:
   title: "About"
 
+contact:
+  linkedin: "https://www.linkedin.com/in/gazom/"   # update to your profile
+  email: "azom.chem.lsu@gmail.com"                # update to your email
+  github: "https://github.com/azomtony"
+
 experience:
   - title: "Graduate Research Assistant"
     organization: "Department of Chemistry, Louisiana State University"
@@ -13,27 +18,47 @@ experience:
       - "Automated workflows for data generation, model training, and validation using active learning."
       - "Mentored undergraduate researchers on simulation project."
 
+  - title: "Academic Cooperation Participant"
+    organization: "Lawrence Livermore National Laboratory"
+    dates: "2025 — Present"
+    description: >
+      Investigation water and chloride ion transport in carbon nanotube porins with ML potential.
+
+  - title: "Computational Chemistry Material Science Graduate Intern"
+    organization: "Lawrence Livermore National Laboratory"
+    dates: "May 2025 — August 2025"
+    description: >
+      Investigated transport in nanofluidic channels.
+    highlights:
+      - "Investigated ion and proton transport through functionalized ultrashort carbon nanotube (CNT) porins under confinement"
+      - "Developed MACE potential to simulate pH-responsive pore gating behavior"
+      - "Performed metadynamics simulations to quantify proton conductance using proton-defect-based CVs"
+
+  - title: "Instructor at Molecular Simulations Workshop"
+    organization: " Louisiana State University"
+    dates: "June 2024 — July 2024"
+    description: >
+      Demonstrated molecular dynamics simulation tools.
+    highlights:
+      - "Assisted in instructing undergraduate students in computational chemistry techniques and methodologies"
+      - "Guided students through research projects, providing mentorship and technical support"
+      - "Created template code and facilitated hands-on laboratory sessions"
+
+  - title: "Graduate Teaching Assistant"
+    organization: "Department of Chemistry, Louisiana State University"
+    dates: "2021 — 2022"
+    description: >
+      Instructed undergraduate students in CHEM 1212, supervised experiments, proctored exams, and graded lab reports.
+
 education:
-  - degree: "Ph.D. in Chemistry"
+  - degree: "Ph.D. in Chemistry with Minor in Computer Science"
     institution: "Louisiana State University"
     location: "Baton Rouge, Louisiana"
-    summary: "Dissertation focused on molecular modeling of confined electrolytes and nanofluidic channels."
+    summary: "Dissertation: COMPUTATIONAL NANOSCALE INVESTIGATIONS OF STRUCTURE, DYNAMICS, AND REACTIVITY AT SOLID–LIQUID INTERFACES."
   - degree: "B.Sc. in Applied Chemistry & Chemical Engineering"
     institution: "University of Dhaka"
     location: "Dhaka, Bangladesh"
-    summary: "Emphasis on physical chemistry, thermodynamics, and materials engineering."
-
-affiliation:
-  title: "Computational Molecular Science Group"
-  description: >
-    Working alongside experimental electrochemists and ML practitioners to co-design workflows
-    for solid–liquid interfaces.
-  meta: "Department of Chemistry, Louisiana State University"
 
 volunteer:
-  - title: "Graduate peer mentor"
-    summary: "Support onboarding students with code reviews, simulation clinics, and reproducibility checklists."
-  - title: "STEM outreach & demo lead"
-    summary: "Share nanoscience demonstrations at campus open houses and regional science events."
-  - title: "Open-source contributor"
-    summary: "Package reusable analysis notebooks and documentation so collaborators can extend my workflows."
+  - title: "LSU Discover Day"
+  - title: "Super Science Saturday"

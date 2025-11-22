@@ -22,6 +22,43 @@ footer.container {
   gap: .6rem;
   justify-content: center;
   padding-top: 1rem;
+  flex-wrap: wrap; /* allow chips to wrap on small screens instead of squishing */
+}
+.contact-bar {
+  display: flex;
+  gap: .6rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: .6rem auto 1rem;
+}
+.contact-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  padding: .45rem .8rem;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #e2e8f0;
+  background: rgba(15,23,42,.8);
+  border: 1px solid rgba(148,163,184,.35);
+  box-shadow: 0 10px 25px rgba(2,6,23,.35);
+  transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease, color .2s ease;
+}
+.contact-chip:hover {
+  transform: translateY(-2px);
+  border-color: #38bdf8;
+  color: #7dd3fc;
+  box-shadow: 0 14px 32px rgba(14,165,233,.35);
+}
+.contact-chip .icon {
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+}
+.contact-chip svg {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 .chip {
   display: inline-block;
@@ -36,6 +73,7 @@ footer.container {
   box-shadow: 0 10px 25px rgba(2,6,23,.4);
   position: relative;
   overflow: hidden;
+  white-space: nowrap; /* keep label on a single line */
 }
 .chip.active {
   background: linear-gradient(130deg,#6366f1,#0ea5e9,#06b6d4);
@@ -238,8 +276,8 @@ footer.container {
 }
 .exp-highlights li { margin-bottom: .35rem; }
 .edu-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
 }
 .edu-card {
@@ -267,6 +305,12 @@ footer.container {
 }
 .about-affiliation .affil-text h3 {
   color: #e2e8f0;
+}
+.about-affiliation .affil-grid {
+  display: block;
+}
+.about-affiliation .affil-text p {
+  margin: .3rem 0 0;
 }
 .affil-meta {
   margin-top: .5rem;
