@@ -1809,6 +1809,10 @@ main.container.page-wide {
     grid-template-columns: 1fr;
   }
 
+  .pub-card.has-toc {
+    grid-template-columns: 1fr;
+  }
+
   .hero {
     min-height: auto;
     padding-top: 2rem;
@@ -1893,6 +1897,7 @@ main.container.page-wide {
   .expertise-grid,
   .domain-map,
   .featured-project-grid,
+  .software-grid,
   .pub-card {
     grid-template-columns: 1fr;
   }
@@ -1914,6 +1919,22 @@ main.container.page-wide {
   .vol-main.no-logo,
   .vol-gallery {
     grid-template-columns: 1fr;
+  }
+
+  .edu-card {
+    grid-template-columns: 1fr;
+  }
+
+  .edu-logo {
+    margin: 0 auto;
+  }
+
+  .talk-poster-card {
+    grid-template-columns: 1fr;
+  }
+
+  .talk-poster-card .experience-logo {
+    margin: 0 auto;
   }
 
   .award-card {

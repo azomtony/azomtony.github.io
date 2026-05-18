@@ -17,7 +17,7 @@ wide: true
   </div>
   <div class="experience-grid">
     {% for item in about.scientific_talks %}
-    <article class="experience-card">
+    <article class="experience-card talk-poster-card">
       <div class="experience-logo">
         {% if item.logo %}
         <img src="{{ item.logo | relative_url }}" alt="{{ item.conference }} logo">
@@ -52,7 +52,7 @@ wide: true
   </div>
   <div class="experience-grid">
     {% for item in about.poster_presentations %}
-    <article class="experience-card">
+    <article class="experience-card talk-poster-card">
       <div class="experience-logo">
         {% if item.logo %}
         <img src="{{ item.logo | relative_url }}" alt="{{ item.conference }} logo">
