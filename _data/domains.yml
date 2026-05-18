@@ -1,0 +1,27 @@
+- title: "Solid-Liquid Interfaces"
+  short: "SLI"
+  summary: "Atomistic structure, dynamics, and reactivity at graphene, graphene oxide, membrane, and solvent interfaces."
+
+- title: "Machine-Learning Force Fields"
+  short: "MLFF"
+  summary: "MACE, DeePMD, active learning, and validation workflows for quantum-accurate molecular dynamics."
+
+- title: "Nanofluidics"
+  short: "NANO"
+  summary: "Water, ion, and proton transport through confined channels, functionalized pores, and responsive gates."
+
+- title: "Separation Science"
+  short: "SEP"
+  summary: "Molecular modeling of transport, selectivity, and interfacial processes relevant to separations."
+
+- title: "Agentic AI"
+  short: "AI"
+  summary: "Scientific agents and automation systems for research workflows, code, data, and simulation tasks."
+
+- title: "Energy and Fuels"
+  short: "E/F"
+  summary: "Molecular modeling for transport, interfacial chemistry, membranes, and materials relevant to energy systems."
+
+- title: "Semiconductors"
+  short: "SEMI"
+  summary: "Computational materials perspective for interfaces, thin films, chemistry, and process-relevant molecular behavior."

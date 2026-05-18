@@ -1,6 +1,7 @@
 ---
 title: About
 permalink: /about/
+wide: true
 ---
 
 {% assign about = site.data.about %}
@@ -37,37 +38,18 @@ permalink: /about/
     </span>
     <span>GitHub</span>
   </a>
-  {% endif %}
-</div>
 {% endif %}
-
-{% if about.experience %}
-<section class="about-section">
-  <div class="section-head">
-    <h2>Experience</h2>
-  </div>
-  <div class="exp-list">
-    {% for exp in about.experience %}
-    <article class="exp-card">
-      <div class="exp-body">
-        <h3>{{ exp.title }}</h3>
-        <p class="exp-meta">
-          {{ exp.organization }}
-          {% if exp.dates %} · {{ exp.dates }}{% endif %}
-        </p>
-        {{ exp.description | markdownify }}
-        {% if exp.highlights %}
-        <ul class="exp-highlights">
-          {% for item in exp.highlights %}
-          <li>{{ item }}</li>
-          {% endfor %}
-        </ul>
-        {% endif %}
-      </div>
-    </article>
-    {% endfor %}
-  </div>
-</section>
+{% if about.downloads and about.downloads.size > 0 %}
+  {% for item in about.downloads %}
+  <a class="contact-chip" href="{{ item.file | relative_url }}" {% if item.file contains 'http' %}target="_blank" rel="noopener"{% endif %} aria-label="{{ item.label }}">
+    <span class="icon">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h8l5 5v15H6V2zm7 1.8V8h4.2L13 3.8zM8 11v2h8v-2H8zm0 4v2h8v-2H8z" fill="currentColor"/></svg>
+    </span>
+    <span>{{ item.short_label | default: item.label }}</span>
+  </a>
+  {% endfor %}
+{% endif %}
+</div>
 {% endif %}
 
 {% if about.education %}
@@ -78,9 +60,75 @@ permalink: /about/
   <div class="edu-list">
     {% for edu in about.education %}
     <article class="edu-card">
-      <h3>{{ edu.degree }}</h3>
-      <p class="edu-meta">{{ edu.institution }}{% if edu.location %}, {{ edu.location }}{% endif %}</p>
-      <p>{{ edu.summary }}</p>
+      <div class="edu-logo">
+        {% if edu.logo %}
+        <img src="{{ edu.logo | relative_url }}" alt="{{ edu.institution }} logo">
+        {% elsif edu.logo_text %}
+        <span>{{ edu.logo_text }}</span>
+        {% else %}
+        <span>{{ edu.institution | slice: 0, 2 }}</span>
+        {% endif %}
+      </div>
+      <div class="edu-body">
+        <h3>{{ edu.degree }}</h3>
+        <p class="edu-meta">{{ edu.institution }}{% if edu.location %}, {{ edu.location }}{% endif %}</p>
+        {% if edu.year or edu.dates %}
+        <p class="edu-year">{{ edu.year | default: edu.dates }}</p>
+        {% endif %}
+        {% if edu.summary %}
+        <p>{{ edu.summary }}</p>
+        {% endif %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% if about.awards and about.awards.size > 0 %}
+<section class="about-section">
+  <div class="section-head">
+    <h2>Honors & Awards</h2>
+  </div>
+  <div class="award-list">
+    {% for item in about.awards %}
+    <article class="award-card">
+      <div class="award-logo">
+        {% if item.logo %}
+        <img src="{{ item.logo | relative_url }}" alt="{{ item.organization | default: item.title }} logo">
+        {% elsif item.logo_text %}
+        <span>{{ item.logo_text }}</span>
+        {% else %}
+        <span>{{ item.organization | default: item.title | slice: 0, 2 }}</span>
+        {% endif %}
+      </div>
+      <div class="award-body">
+        <h3>{{ item.title }}</h3>
+        {% if item.organization %}
+        <p class="award-org">{{ item.organization }}</p>
+        {% endif %}
+        {% if item.date %}
+        <p class="award-date">{{ item.date }}</p>
+        {% endif %}
+        {% if item.summary and item.summary != "" %}
+        <p>{{ item.summary }}</p>
+        {% endif %}
+        {% if item.url %}
+        <a class="award-preview{% unless item.preview_image %} no-image{% endunless %}" href="{{ item.url }}" {% if item.url contains 'http' %}target="_blank" rel="noopener"{% endif %}>
+          {% if item.preview_image %}
+          <span class="award-preview-image">
+            <img src="{{ item.preview_image | relative_url }}" alt="">
+          </span>
+          {% endif %}
+          <span class="award-preview-text">
+            <strong>{{ item.preview_title | default: "Read the article" }}</strong>
+            {% if item.preview_text %}
+            <em>{{ item.preview_text }}</em>
+            {% endif %}
+          </span>
+        </a>
+        {% endif %}
+      </div>
     </article>
     {% endfor %}
   </div>
@@ -107,6 +155,44 @@ permalink: /about/
 </section>
 {% endif %}
 
+{% if about.certifications and about.certifications.size > 0 %}
+<section class="about-section">
+  <div class="section-head">
+    <h2>Certifications</h2>
+  </div>
+  <div class="award-list">
+    {% for item in about.certifications %}
+    <article class="award-card">
+      <div class="award-logo">
+        {% if item.logo %}
+        <img src="{{ item.logo | relative_url }}" alt="{{ item.issuer | default: item.title }} logo">
+        {% elsif item.logo_text %}
+        <span>{{ item.logo_text }}</span>
+        {% else %}
+        <span>{{ item.issuer | default: item.title | slice: 0, 2 }}</span>
+        {% endif %}
+      </div>
+      <div class="award-body">
+        <h3>{{ item.title }}</h3>
+        {% if item.issuer %}
+        <p class="award-org">{{ item.issuer }}</p>
+        {% endif %}
+        {% if item.date %}
+        <p class="award-date">{{ item.date }}</p>
+        {% endif %}
+        {% if item.summary and item.summary != "" %}
+        <p>{{ item.summary }}</p>
+        {% endif %}
+        {% if item.url %}
+        <a class="text-link certification-link" href="{{ item.url }}" {% if item.url contains 'http' %}target="_blank" rel="noopener"{% endif %}>View credential</a>
+        {% endif %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
 {% if about.volunteer %}
 <section class="about-section">
   <div class="section-head">
@@ -114,9 +200,53 @@ permalink: /about/
   </div>
   <ul class="vol-list">
     {% for item in about.volunteer %}
-    <li>
-      <strong>{{ item.title }}</strong>
-      <p>{{ item.summary }}</p>
+    <li class="vol-card{% if item.images or item.image %} has-image{% endif %}">
+      <div class="vol-main{% unless item.logo or item.logo_text %} no-logo{% endunless %}">
+        {% if item.logo or item.logo_text %}
+        <div class="vol-media">
+          {% if item.logo %}
+          <img src="{{ item.logo | relative_url }}" alt="{{ item.organization | default: item.title }} logo">
+          {% elsif item.logo_text %}
+          <span>{{ item.logo_text }}</span>
+          {% endif %}
+        </div>
+        {% endif %}
+        <div class="vol-body">
+          {% if item.role %}
+          <p class="vol-role">{{ item.role }}</p>
+          {% endif %}
+          <h3>{{ item.title }}</h3>
+          {% if item.organization or item.location or item.date %}
+          <p class="vol-meta">
+          {% if item.organization %}{{ item.organization }}{% endif %}
+            {% if item.location %}{% if item.organization %}, {% endif %}{{ item.location }}{% endif %}
+            {% if item.date %}{% if item.organization or item.location %}, {% endif %}{{ item.date }}{% endif %}
+          </p>
+          {% endif %}
+          {% if item.summary %}
+          <p>{{ item.summary }}</p>
+          {% endif %}
+          {% if item.url %}
+          <a class="text-link volunteer-link" href="{{ item.url }}" {% if item.url contains 'http' %}target="_blank" rel="noopener"{% endif %}>View activity</a>
+          {% endif %}
+        </div>
+      </div>
+
+      {% if item.images %}
+      <div class="vol-gallery count-{{ item.images.size }}">
+        {% for image in item.images limit: 3 %}
+        <div class="vol-media vol-photo">
+          <img src="{{ image | relative_url }}" alt="{{ item.title }} event photo {{ forloop.index }}">
+        </div>
+        {% endfor %}
+      </div>
+      {% elsif item.image %}
+      <div class="vol-gallery count-1">
+        <div class="vol-media vol-photo">
+          <img src="{{ item.image | relative_url }}" alt="{{ item.title }} event photo">
+        </div>
+      </div>
+      {% endif %}
     </li>
     {% endfor %}
   </ul>

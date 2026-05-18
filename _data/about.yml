@@ -2,63 +2,256 @@ hero:
   title: "About"
 
 contact:
-  linkedin: "https://www.linkedin.com/in/gazom/"   # update to your profile
-  email: "azom.chem.lsu@gmail.com"                # update to your email
+  linkedin: "https://www.linkedin.com/in/gazom/"
+  email: "azom.chem.lsu@gmail.com"
   github: "https://github.com/azomtony"
 
+current_position:
+  organization: "Binghamton University"
+  logo: "/assets/images/B-symbol-2c.jpg"
+  logo_text: "BU"
+  position: "Postdoctoral Associate"
+  lab_group: "Department of Mechanical Engineering"
+  email: "azom.chem.lsu@gmail.com"
+  intro:
+    - "I am a computational materials scientist and currently a Postdoctoral Associate in the Department of Mechanical Engineering at Binghamton University. My research focuses on atomistic modeling to investigate complex interfacial processes, chemical reactivity relevant to environmental remediation, separation science, and energy storage systems. I also study transport phenomena in nanofluidic environments."
+    - "My work combines quantum mechanical methods, molecular simulations, machine-learned force fields (MLFFs), and generative AI/LLM-driven workflows to accelerate materials discovery, with a growing focus on semiconductor manufacturing and advanced materials design."
+    - "I earned my PhD in Chemistry from Louisiana State University and my B.Sc. in Applied Chemistry and Chemical Engineering from University of Dhaka."
+
 experience:
-  - title: "Graduate Research Assistant"
-    organization: "Department of Chemistry, Louisiana State University"
-    dates: "2021 — 2025"
-    description: >
-      Lead computational studies of solid–liquid interfaces using classical and
-      *ab initio* molecular dynamics, enhanced sampling, and machine-learning potentials.
-    highlights:
-      - "Developed ML potentials for GO–Water, GO-Methanol, Glyme-Graphene, Ion Exchange Membranes."
-      - "Automated workflows for data generation, model training, and validation using active learning."
-      - "Mentored undergraduate researchers on simulation project."
-
+  - title: "Postdoctoral Research Associate "
+    mentor: "Dr. Hyuna Kwon"
+    department: "Department of Mechanical Engineering"
+    organization: "Binghamton University"
+    dates: "2026 — Current"
+    logo: "/assets/images/B-symbol-2c.jpg"
+    
   - title: "Academic Cooperation Participant"
+    mentor: "Dr. Tuan Anh Pham"
+    department: "Materials Science Division"
     organization: "Lawrence Livermore National Laboratory"
-    dates: "2025 — Present"
-    description: >
-      Investigation water and chloride ion transport in carbon nanotube porins with ML potential.
+    dates: "2025 — Current"
+    logo: "/assets/images/llnl_logo.jpeg"
 
-  - title: "Computational Chemistry Material Science Graduate Intern"
+  - title: "Graduate Research Assistant"
+    mentor: "Dr. Revati Kumar"
+    department: "Department of Chemistry"
+    organization: "Louisiana State University"
+    dates: "2021 — 2025"
+    logo: "/assets/images/lsu_logo.jpg"
+
+  - title: "Computational Chemistry and Materials Science Graduate Intern"
+    mentor: "Dr. Tuan Anh Pham"
+    department: "Materials Science Division"
     organization: "Lawrence Livermore National Laboratory"
-    dates: "May 2025 — August 2025"
-    description: >
-      Investigated transport in nanofluidic channels.
-    highlights:
-      - "Investigated ion and proton transport through functionalized ultrashort carbon nanotube (CNT) porins under confinement"
-      - "Developed MACE potential to simulate pH-responsive pore gating behavior"
-      - "Performed metadynamics simulations to quantify proton conductance using proton-defect-based CVs"
-
-  - title: "Instructor at Molecular Simulations Workshop"
-    organization: " Louisiana State University"
-    dates: "June 2024 — July 2024"
-    description: >
-      Demonstrated molecular dynamics simulation tools.
-    highlights:
-      - "Assisted in instructing undergraduate students in computational chemistry techniques and methodologies"
-      - "Guided students through research projects, providing mentorship and technical support"
-      - "Created template code and facilitated hands-on laboratory sessions"
+    dates: "June 2025 — August 2025"
+    logo: "/assets/images/llnl_logo.jpeg"
 
   - title: "Graduate Teaching Assistant"
-    organization: "Department of Chemistry, Louisiana State University"
+    department: "Department of Chemistry"
+    organization: "Louisiana State University"
     dates: "2021 — 2022"
-    description: >
-      Instructed undergraduate students in CHEM 1212, supervised experiments, proctored exams, and graded lab reports.
+    logo: "/assets/images/lsu_logo.jpg"
+
 
 education:
   - degree: "Ph.D. in Chemistry with Minor in Computer Science"
     institution: "Louisiana State University"
     location: "Baton Rouge, Louisiana"
+    year: "2025"
+    logo: "/assets/images/lsu_logo.jpg"
     summary: "Dissertation: COMPUTATIONAL NANOSCALE INVESTIGATIONS OF STRUCTURE, DYNAMICS, AND REACTIVITY AT SOLID–LIQUID INTERFACES."
   - degree: "B.Sc. in Applied Chemistry & Chemical Engineering"
     institution: "University of Dhaka"
     location: "Dhaka, Bangladesh"
+    year: "2019"
+    logo: "/assets/images/du_logo.svg"
+
+downloads:
+  - label: "Curriculum Vitae"
+    file: "/assets/files/Golam_Azom_CV.pdf"
+    mark: "PDF"
+    description: "Full academic CV"
+
+  - label: "Research Statement"
+    file: "/assets/files/Golam_Azom_Research_Statement.pdf"
+    mark: "PDF"
+    description: "Research interests and future directions"
+
+
+awards:
+  - title: "NSF ACCESS DISCOVER Allocation "
+    organization: "NSF"
+    date: "2026"
+    logo: "/assets/images/access_logo.svg"
+    summary: "1.5 million ACCESS Credits for 'Solvent-Resolved Adsorption and Surface-Coupled Aggregation of Asphaltene on Graphene Oxide' "
+
+  - title: "Featured in LLNL Newsline "
+    organization: "Lawrence Livermore National Laboratory"
+    date: "2025"
+    logo: "/assets/images/llnl_logo.jpeg"
+    summary: "Featured for my work on ion transport through carbon nanotube defects."
+    url: "https://www.llnl.gov/article/53366/modeling-materials-defects-llnl-interns-explore-nanotubes-batteries"
+
+  - title: "Tier One Advancing Science Conference Grant"
+    organization: "NOBCChE"
+    date: "2024"
+    logo: "/assets/images/nobcche.jpg"
+
+  - title: "Tier One Advancing Science Conference Grant"
+    organization: "NOBCChE"
+    date: "2023"
+    logo: "/assets/images/nobcche.jpg"
+
+certifications:
+  - title: "IBM Data Science Professional Certificate"
+    issuer: "Coursera"
+    date: "2026"
+    logo: "/assets/images/coursera_logo.png"
+
+  - title: "AI Agents Fundamentals"
+    issuer: "Hugging Face"
+    date: "2026"
+    logo: "/assets/images/hg-logo.png"
+
+
+
 
 volunteer:
-  - title: "LSU Discover Day"
   - title: "Super Science Saturday"
+    organization: "Louisiana State University"
+    location: "Baton Rouge, Louisiana"
+    date: "2025"
+    logo: "/assets/images/sss-logo.webp"
+    images:
+      - "/assets/images/sss-1.jpg"
+      - "/assets/images/sss-2.jpg"
+    summary: "Participated in public outreach and science education event for kindergarten to 12th-grade students."
+
+  - title: "LSU Discover Day"
+    organization: "Louisiana State University"
+    location: "Baton Rouge, Louisiana"
+    date: "2025"
+    logo: "/assets/images/discover-day.jpg"
+    summary: "Volunteered to arrange undergraduate research presentations."
+
+  - title: "Graduate Research Conference (GRC)"
+    role: "Judge"
+    organization: "Louisiana State University"
+    location: "Baton Rouge, Louisiana"
+    date: "2025"
+    logo: "/assets/images/grc-lsu.png"
+    summary: "Volunteered to judge graduate research poster presentations."
+
+  - title: "Outreach at FLAIM"
+    organization: "Foreign Language Academic Immersion Magnet"
+    location: "Baton Rouge, Louisiana"
+    date: "2023"
+    logo: "/assets/images/flaim.avif"
+    summary: "Volunteered to demonstrate molecular simulations to elementary school students."
+
+workshops:
+  - role: "Instructor"
+    title: "Molecular Simulations Workshop"
+    organization: "Louisiana State University"
+    dates: "June 2024 — July 2024"
+    logo: "/assets/images/lsu_logo.jpg"
+    github: "https://github.com/azomtony/molecular_simulations_workshop"
+
+  - role: "Participant"
+    title: "AI Waves: Transforming Water Research"
+    organization: "Argonne National Laboratory and the University of Chicago"
+    dates: "May 5, 2026"
+    logo: "/assets/images/ai_wave_ws.jpg"
+
+  - role: "Participant"
+    title: "Machine Learning for Molecular Science "
+    organization: "University of Minnesota Twin Cities "
+    dates: "July 22-26, 2024"
+    logo: "/assets/images/icomse_logo.png"
+
+  - role: "Participant"
+    title: "Enhanced Sampling Virtual School 2023 "
+    organization: "i-CoMSE "
+    dates: "March 20-24, 2023"
+    logo: "/assets/images/icomse_logo.png"
+
+  - role: "Participant"
+    title: "DFT Summer School  "
+    organization: "Mississippi State University "
+    dates: "June 12-18, 2022"
+    logo: "/assets/images/icomse_logo.png"
+
+scientific_talks:
+  - title: "From Graphene Oxide to Graphene: Changes in Interfacial Water Structure and Reactivity Using Deep Neural Network Force Fields"
+    conference: "Physical Chemistry Seminar"
+    place: "Department of Chemistry, Louisiana State University"
+    date: "March 18, 2025"
+    logo: "/assets/images/lsu_logo.jpg"
+
+  - title: "Developing Neural Network Force-Fields for Graphene-Oxide Water Interfaces at Different Oxidation Level"
+    conference: "Physical Chemistry Seminar"
+    place: "Department of Chemistry, Louisiana State University"
+    date: "February 20, 2024"
+    logo: "/assets/images/lsu_logo.jpg"
+
+  - title: "Behavior of Polar Liquids at Graphene-Oxide Liquid Interface"
+    conference: "Gordon Research Seminar"
+    place: "Holderness, New Hampshire"
+    date: "July 29, 2023"
+    logo: "/assets/images/grc-logo.jpeg"
+
+  - title: "Developing Neural Network Force-Fields for Graphene-Oxide Water Interfaces at Different Oxidation Level"
+    conference: "Physical Chemistry Seminar"
+    place: "Department of Chemistry, Louisiana State University"
+    date: "March 11, 2023"
+    logo: "/assets/images/lsu_logo.jpg"
+
+poster_presentations:
+  - title: "Pore Gating Behavior of Functionalized Carbon Nanotube Porins using Machine Learned Interatomic Potential"
+    conference: "Interns Poster Symposium"
+    place: "Lawrence Livermore National Laboratory, Livermore"
+    date: "July 31, 2025"
+    logo: "/assets/images/llnl_logo.jpeg"
+
+  - title: "DNNF-GO: A Scalable Force-field to Study Interfacial Water at Graphene Oxide Interfaces"
+    conference: "ACS Spring 2025"
+    place: "San Diego, California"
+    date: "March 25, 2025"
+    logo: "/assets/images/acs_logo.webp"
+
+  - title: "Developing Neural Network Force Fields for Aqueous Graphene-Oxide Interfaces at Different Oxidation Levels"
+    conference: "8th i-CoMSE Summer School"
+    place: "University Of Minnesota Twin Cities, Minneapolis"
+    date: "July 25, 2024"
+    logo: "/assets/images/icomse_logo.png"
+
+  - title: "Developing Neural Network Force Fields for Aqueous Graphene-Oxide Interfaces at Different Oxidation Levels"
+    conference: "ACS Spring 2024"
+    place: "New Orleans, Louisiana"
+    date: "March 18-19, 2024"
+    logo: "/assets/images/acs_logo.webp"
+
+  - title: "Developing Neural Network Force Fields for Aqueous Graphene-Oxide Interfaces at Different Oxidation Levels"
+    conference: "NOBCChE Conference"
+    place: "New Orleans, Louisiana"
+    date: "September 13, 2023"
+    logo: "/assets/images/nobcche.jpg"
+
+  - title: "Behavior of Polar Liquids at Graphene-Oxide Liquid Interface"
+    conference: "Gordon Research Conference"
+    place: "Holderness, New Hampshire"
+    date: "July 31, 2023"
+    logo: "/assets/images/grc-logo.jpeg"
+
+  - title: "Developing Neural Network Force Fields for Aqueous Graphene-Oxide Interfaces at Different Oxidation Levels"
+    conference: "ACS Spring 2023"
+    place: "Indianapolis, Indiana"
+    date: "March 27-28, 2023"
+    logo: "/assets/images/acs_logo.webp"
+
+  - title: "Developing Neural Network Force Fields for Graphene-Oxide Interfaces"
+    conference: "ACS Southwest Regional Meeting"
+    place: "Baton Rouge, Louisiana"
+    date: "November 7, 2022"
+    logo: "/assets/images/acs_logo.webp"

@@ -1,32 +1,47 @@
 ---
 title: Publications
 permalink: /publications/
+wide: true
 ---
+
+{% assign pubs = site.data.publications %}
 
 <section class="page-hero">
   <h1 class="page-title">Publications</h1>
-  <p class="page-links">
-    <a class="badge" href="https://scholar.google.com/citations?user=rLltVjIAAAAJ&hl=en" target="_blank">Google Scholar</a>
-    <a class="badge" href="https://www.researchgate.net/profile/Golam-Azom?ev=hdr_xprf" target="_blank">ResearchGate</a>
-  </p>
+  <div class="publication-profiles" aria-label="Publication profiles">
+    {% for profile in site.data.publication_profiles %}
+    <a class="profile-link {{ profile.key }}" href="{{ profile.url }}" target="_blank" rel="noopener">
+      {% if profile.icon %}
+      <img class="profile-logo" src="{{ profile.icon | relative_url }}" alt="" aria-hidden="true">
+      {% endif %}
+      <span>{{ profile.label }}</span>
+    </a>
+    {% endfor %}
+  </div>
 </section>
 
-{% assign groups = site.data.publications | group_by: "year" | sort: "name" | reverse %}
+{% assign groups = pubs | group_by: "year" | sort: "name" | reverse %}
 {% for g in groups %}
-  <h2 class="pub-year">{{ g.name }}</h2>
+  <div class="pub-year-row">
+    <h2 class="pub-year">{{ g.name }}</h2>
+    <span>{{ g.items | size }} publication{% if g.items.size != 1 %}s{% endif %}</span>
+  </div>
   <div class="pub-list">
     {% for p in g.items %}
-      <article class="pub-card">
+      <article id="{% if p.id %}{{ p.id }}{% else %}{{ p.title | slugify }}{% endif %}" class="pub-card{% if p.toc %} has-toc{% else %} no-toc{% endif %}">
+        {% if p.toc %}
         <div class="pub-thumb">
-          {% if p.toc %}<img src="{{ p.toc | relative_url }}" alt="TOC figure for {{ p.title }}">{% endif %}
+          <img src="{{ p.toc | relative_url }}" alt="TOC figure for {{ p.title }}">
         </div>
+        {% endif %}
         <div class="pub-body">
           <div class="pub-meta">
             {% if p.venue %}<span class="venue">{{ p.venue }}</span>{% endif %}
             {% if p.type %}<span class="tag">{{ p.type }}</span>{% endif %}
+            {% if p.status %}<span class="tag status">{{ p.status }}</span>{% endif %}
           </div>
           <h3 class="title">{{ p.title }}</h3>
-          <p class="authors">{{ p.authors | markdownify }}</p>
+          <div class="authors">{{ p.authors | markdownify }}</div>
 
           {% if p.abstract %}
           <details class="abs">
@@ -35,14 +50,11 @@ permalink: /publications/
           </details>
           {% endif %}
 
+          {% if p.doi %}
           <div class="links">
-            {% if p.doi %}<a href="https://doi.org/{{ p.doi }}">DOI</a>{% endif %}
-            {% if p.link %}<a href="{{ p.link }}">Publisher</a>{% endif %}
-            {% if p.preprint %}<a href="{{ p.preprint }}">Preprint</a>{% endif %}
-            {% if p.pdf %}<a href="{{ p.pdf }}">PDF</a>{% endif %}
-            {% if p.code %}<a href="{{ p.code }}">Code</a>{% endif %}
-            {% if p.bibtex %}<a href="{{ p.bibtex }}">BibTeX</a>{% endif %}
+            <a href="https://doi.org/{{ p.doi }}">DOI</a>
           </div>
+          {% endif %}
         </div>
       </article>
     {% endfor %}

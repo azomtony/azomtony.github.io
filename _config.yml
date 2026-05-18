@@ -1,6 +1,6 @@
 title: Golam Azom
-description: Computational Chemistry • ML Force Fields • Interfaces
-url: ""        # set to https://azomtony.github.io after deploy
+description: Computational chemistry, machine-learning force fields, and molecular simulation workflows for interfaces and nanofluidics.
+url: "https://azomtony.github.io"
 baseurl: ""    # keep empty for user/organization pages
 permalink: pretty
 markdown: kramdown
@@ -10,7 +10,9 @@ defaults:
     values: {layout: default}
 nav:
   - {title: "Home",          url: "/"}
-  - {title: "Research",      url: "/research/"}
-  - {title: "Skills",        url: "/skills/"}
+  - {title: "Research Projects", url: "/projects/"}
+  - {title: "Software/Workflow", url: "/software-workflow/"}
   - {title: "Publications",  url: "/publications/"}
+  - {title: "Experience",    url: "/experience/"}
+  - {title: "Talks/Posters",  url: "/talks-posters/"}
   - {title: "About",         url: "/about/"}

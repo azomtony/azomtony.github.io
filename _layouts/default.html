@@ -1,22 +1,32 @@
-<!doctype html><html lang="en"><head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
 <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@2.0.6/css/pico.min.css">
-<link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 {% seo %}
-<!--/head><body>
-<header class="container">{% include nav.html %}</header>-->
+</head>
 <body>
-  <!-- Global page buttons -->
-  <section class="top-cta">
-    {% assign here = page.url %}
-    <a href="/" class="chip{% if here == '/' %} active{% endif %}">Home</a>
-    <a href="/research/" class="chip{% if here contains '/research/' %} active{% endif %}">Research</a>
-    <a href="/skills/" class="chip{% if here contains '/skills/' %} active{% endif %}">Skills</a>
-    <a href="/publications/" class="chip{% if here contains '/publications/' %} active{% endif %}">Publications</a>
-    <a href="/about/" class="chip{% if here contains '/about/' %} active{% endif %}">About</a>
-  </section>
+  <header class="site-header">
+    <nav class="site-nav container">
+      <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <div class="nav-links">
+        {% assign here = page.url %}
+        {% for item in site.nav %}
+        {% assign is_active = false %}
+        {% if here == item.url %}
+          {% assign is_active = true %}
+        {% elsif item.url != '/' and here contains item.url %}
+          {% assign is_active = true %}
+        {% endif %}
+        <a href="{{ item.url | relative_url }}" class="{% if is_active %}active{% endif %}">{{ item.title }}</a>
+        {% endfor %}
+      </div>
+    </nav>
+  </header>
 
-<main class="container">{{ content }}</main>
-<footer class="container"><hr><small>© {{ site.time | date: "%Y" }} {{ site.title }}</small></footer>
-</body></html>
+  <main class="container{% if page.wide %} page-wide{% endif %}">{{ content }}</main>
+  <footer class="container site-footer"><small>© {{ site.time | date: "%Y" }} {{ site.title }}</small></footer>
+</body>
+</html>

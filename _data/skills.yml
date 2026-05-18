@@ -1,5 +1,6 @@
 hero:
   title: "Skills & Expertise"
+  intro: "A focused view of the computational methods, machine-learning tools, and programming skills I use to turn molecular simulation problems into reproducible workflows."
 
 cloud_sections:
   - title: "Computational Methods"
@@ -31,4 +32,3 @@ cloud_sections:
       - {label: "Python", weight: 5}
       - {label: "C", weight: 2}
       - {label: "Shell Scripting", weight: 2}
-

@@ -1,0 +1,14 @@
+- label: "Google Scholar"
+  key: "scholar"
+  icon: "/assets/images/google-scholar.svg"
+  url: "https://scholar.google.com/citations?user=rLltVjIAAAAJ&hl=en"
+
+- label: "ORCID"
+  key: "orcid"
+  icon: "/assets/images/orcid.svg"
+  url: "https://orcid.org/"
+
+- label: "ResearchGate"
+  key: "researchgate"
+  icon: "/assets/images/researchgate.svg"
+  url: "https://www.researchgate.net/profile/Golam-Azom?ev=hdr_xprf"
